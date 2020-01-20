@@ -47,7 +47,7 @@ while not Dominion.gameover(supply):
         print (player.name,player.calcpoints())
     print ("\rStart of turn " + str(turn))    
     for player in players:
-        if not Dominion.gameover(supply):
+            #Removed game-end check here
             print("\r")
             player.turn(players,supply,trash)
             
